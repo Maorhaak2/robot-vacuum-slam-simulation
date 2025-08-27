@@ -1,0 +1,7 @@
+[
+    {"time": 1, "id": "Wall_1", "cloudPoints": [[0.1, 1.5, 0.1], [0.2, 1.6, 0.1]]},
+    {"time": 2, "id": "Chair_1", "cloudPoints": [[1.0, -0.5, 0.1], [1.1, -0.4, 0.1]]},
+    {"time": 3, "id": "Table_1", "cloudPoints": [[2.0, -1.0, 0.1], [2.1, -1.1, 0.1]]},
+    {"time": 4, "id": "Wall_2", "cloudPoints": [[0.5, 1.0, 0.1], [0.6, 1.1, 0.1]]},
+    {"time": 5, "id": "ERROR", "cloudPoints": [[0.0, 0.0, 0.0]]}
+]
