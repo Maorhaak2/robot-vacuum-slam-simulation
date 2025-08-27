@@ -1,8 +1,7 @@
 # Robot Vacuum Cleaner Simulation – Sensor Fusion & SLAM
 
 ## Overview
-A Java simulation of an **autonomous robot vacuum** performing **Simultaneous Localization and Mapping (SLAM)** via multi-sensor fusion (Camera, LiDAR, GPS, IMU).  
-Built with a custom **microservice** architecture, multithreading, and an event-driven MessageBus.
+A concurrent, microservices-based perception & mapping simulator in Java. It models Camera, LiDAR, and GPS/IMU services running in parallel under a tick-driven time service; their streams are fused by a Fusion-SLAM service into a consistent world view and run-time stats. Under the hood, a thread-safe MessageBus exposes an event/broadcast API with Futures for results and round-robin dispatch across workers—services subscribe to message types, emit events, and can spawn new work as they process messages, enabling scalable, decoupled concurrency.
 
 ## Features
 - Thread-safe **MessageBus** for events & broadcasts.
